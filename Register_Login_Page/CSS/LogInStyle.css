@@ -1,0 +1,212 @@
+/* Font */
+.faster-one-regular {
+    font-family: "Faster One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    font-family: 'Sansation', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* LEFT PART OF THE REGISTER PAGE */
+.left-part{
+   /* display: inline-flex; */
+   flex: 1;
+}
+#loginImage{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#logoTitle{
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    transform: translate(-40%, -50%);
+    font-size: 40px;
+    font-family: "Faster One", system-ui;
+}
+h2 #title1{
+    color: #F58634;
+}
+h2 #title2{
+    color: #FFCC29;
+}
+
+/* RIGHT PART OF THE REGISTER PAGE */
+.right-part{
+    flex: 1; 
+    background-color: #664B30;
+}
+#loginTitle{
+    text-align: center;
+    color: white;
+}
+form img{
+    position: absolute;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+}
+#loginForm{
+    /* text-align: center; */
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    padding: 30px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 350px;
+    
+}
+form input{
+    background-color: #443220;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+    padding-left: 50px;
+}
+#email{
+    margin-bottom: 40px;
+    width: 345px;
+    height: 25px;
+}
+#pw{
+    width: 345px;
+    height: 25px;
+}
+#forgotPass a{
+    text-align: left;
+    text-decoration: underline;
+    color: white;
+    font-style: normal;
+    font-size: 12px;
+}
+#loginButton{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+#loginButton input{
+    text-align: center;
+    border-style: none;
+    background-color: #F58634;
+    color: white;
+    width: 265px;
+    height: 55px;
+    border-radius: 45px;
+    margin-bottom: 10px;
+}
+#toRegister{
+    text-align: center;
+}
+#toRegister a{
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    font-style: normal;
+    font-size: 12px;
+
+}
+#loginButton input:hover{
+    background-color: #D17017;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+#loginButton input:active{
+    background-color: #F56234;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    /*
+    box-shadow property: a b c d e
+    a = offset x
+    b = offset y
+    c = blur-radius
+    d = spread-radius
+    e = color
+    */
+}
+
+@media (max-width: 768px) {
+    /* Adjust header */
+    h1{
+        font-size: 38px;
+    }
+
+    /* Adjust logo title */
+    #logoTitle{
+        font-size: 24px;
+    }
+
+    /* Adjust left-part */
+    #logoTitle{
+        top: 50px;
+        left: 20%;
+        font-size: 24px;
+    }
+
+    /* Adjust right-part */
+    #loginTitle{
+        font-size: 24px;
+    }
+    .form-display{
+        width: 300px;
+        height: 250px;
+    }
+    form input{
+        padding: 10px;
+        padding-left: 20px;
+    }
+    form img{
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        justify-content: center;
+    }
+    #email{
+        width: 250px;
+        height: 20px;
+    }
+    #pw{
+        width: 250px;
+        height: 20px;
+    }
+    #loginForm{
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        width: 295px;
+        height: 200px;
+        border: 5px;
+       
+        
+    }
+    #forgotPass a{
+        font-size: 10px;
+    }
+    #toRegister a{
+        font-size: 10px;
+        margin-left: 0;
+    }
+    #toRegister{
+        text-align: center;
+    }
+    #loginButton{
+        text-align: center;
+        margin-left: 0;
+    }
+    #loginButton input{
+        width: 220px;
+        height: 40px;
+    }
+
+}

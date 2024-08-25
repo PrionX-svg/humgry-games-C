@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="/Register_Login_Page/CSS/LogInStyle.css">
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
+    <!-- Import JavaScript -->
+    <script src="/Register_Login_Page/JS/validateLogIn.js"></script>
+    <script src="/Register_Login_Page/JS/AccountDisplay.js"></script>
+</head>
+<body>
+    <!-- LOG IN SECTION -->
+    <div class="left-part">
+        <h2 id="logoTitle"><span id="title1">cAteriNg</span><span id="title2">Z </span></h2> 
+        <img id="loginImage" src="/CAteriNgZ-Assets/food_story4.jpg" alt="SignUp_image">
+    </div>
+
+    <div class="right-part">
+        <h1 id="loginTitle">LOGIN</h1>
+        <div class="form-display">    
+            <form id="loginForm" method="post" onsubmit="validateLogin()">
+                <label for="email"><img src="./Register-Assets/email_icon.png" alt="email_icon"></label>
+                <input type="email" id="email" required><br><br>
+
+                <label for="password"><img src="./Register-Assets/pass_icon.png" alt=""></label>
+                <input type="password" id="pw" required><br><br>
+
+                <div id="forgotPass"><a href="">Forgot password</a><br></div>
+                
+            </form>
+            <div id="loginButton"><input type="submit" value="LOG IN" onclick="validateLogin()"></div>
+            <div id="toRegister"><a href="/Register_Login_Page/SignUpPage.html">Don't have an account? Register here</a><br><br></div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

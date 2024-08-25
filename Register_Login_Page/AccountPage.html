@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="/Register_Login_Page/CSS/AccountPageStyle.css">
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
+    
+</head>
+<body>
+<!-- HEADER -->
+
+    <img id="backButton" src="/CAteriNgZ-Assets/icon/back_button.png" alt="back_button_icon" onclick="window.location.href='HomePage.html';">
+
+    <header>
+        <h1> <span id="title1">cAteriNg</span> <span id="title2">Z </span></h1> 
+    </header>
+
+    <h2>MY ACCOUNT</h2>
+
+<!-- NAVBAR -->
+    <div class="navigation-bar">
+
+        <ul>
+            <li>
+                <a href=""><img id="profileButton" src="/CAteriNgZ-Assets/icon/profile_icon.png" alt="Profile"></a>
+            </li>
+
+            <li>
+                <a href="/HomePage.html"><img id="homeButton" src="/CAteriNgZ-Assets/icon/home_icon.png" alt="Home"></a>
+            </li>
+
+            <li>
+                <a href=""><img id="orderhistoryButton" src="/CAteriNgZ-Assets/icon/orderHistory_icon.png" alt="Order History"></a>
+            </li>
+
+            <li>
+                <a ><img id="cartButton" href="" src="/CAteriNgZ-Assets/icon/cart_icon.png" alt="Cart"></a>
+            </li>
+        </ul>       
+    </div>
+
+<!-- ACC INFO -->
+    <div class="account-information">
+        <ul id="userComponent">
+            <li><strong>Name:</strong><span id="nameOutput"></span></li>
+            <li><strong>Email:</strong><span id="emailOutput"></span></li>
+            <li><strong>Address:</strong><span id="addressOutput"></span></li>
+            <li><strong>Gender:</strong><span id="genderOutput"></span></li>
+            <li><strong>DOB:</strong><span id="dobOutput"></span></li>
+        </ul>
+
+        <button id="LogOutButton" onclick="window.location.href='LogInPage.html';">LOG OUT</button>
+    </div>
+    <!-- Import JS -->
+    <script src="/Register_Login_Page/JS/AccountDisplay.js"></script>
+</body>
+</html>

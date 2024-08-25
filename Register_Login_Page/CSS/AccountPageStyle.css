@@ -1,0 +1,179 @@
+/* Font */
+.faster-one-regular {
+    font-family: "Faster One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sansation', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Sansation', sans-serif; */
+
+/* HEADER */
+
+header{
+    position: sticky;
+    text-align: center;
+}
+#backButton{
+    position: absolute;
+    object-fit: cover;
+    text-align: left;
+    padding-left: 120px;
+    padding-top: 40px;
+    width: 33px;
+    height: 33px;
+}
+
+h1{
+    text-align: center;
+    font-family: "Faster One", system-ui;
+    font-size: 48px;
+}
+h1 #title1{
+    color: #F58634;
+}
+h1 #title2{
+    color: #FFCC29;
+}
+
+/* NAVIGATION BAR */
+
+.navigation-bar{
+
+    background-color: #007965; 
+    display: block;
+    position: fixed;
+    text-align: center;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+
+}
+
+.navigation-bar ul{
+    list-style: none;
+    width: 75px;
+    padding: 5px;
+    border-radius: 20px; 
+}
+
+.navigation-bar li{
+    text-align: center;
+    margin-top: 50px;
+}
+.navigation-bar li:hover{
+    background: #00473B;
+    border-radius: 20px;
+}
+
+#profileButton{
+    width: 44px;
+    height: 44px;
+}
+
+#homeButton{
+    width: 44px;
+    height: 44px;
+}
+
+#orderhistoryButton{
+    width: 44px;
+    height: 44px;
+}
+
+#cartButton{
+    width: 44px;
+    height: 44px;
+}
+
+/* ACCOUNT INFORMATION DISPLAY */
+h2{
+    padding-top: 10px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.account-information{
+    display: block;
+    text-align: center;
+}
+#userComponent li{
+    list-style: none;
+    text-align: left;
+    margin: 30px;
+}
+
+#userComponent{
+    padding-top: 5px;
+    padding-left: 350px;
+}
+
+#LogOutButton{
+    background-color: #F58634;
+    border: none;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 30px;
+    width: 170px;
+
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+    /* Adjust header */
+    h1{
+        font-size: 38px;
+    }
+
+    /* Adjust navigation bar */
+    .navigation-bar ul{
+        width: 50px;
+    }
+    #profileButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #homeButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #orderhistoryButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #cartButton{
+        width: 33px;
+        height: 33px;
+    }
+
+    /* Adjust Account Information Display */
+    #userComponent{
+        padding-top: 3px;
+        padding-left: 100px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    #userComponent li{
+        font-size: 14px;
+    }
+    #LogOutButton{
+        padding: 15px;
+        margin-top: 5px;
+    }
+}

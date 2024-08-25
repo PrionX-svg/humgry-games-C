@@ -1,0 +1,477 @@
+/* Font */
+.faster-one-regular {
+    font-family: "Faster One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sansation', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Sansation', sans-serif; */
+
+/* HEADER */
+
+header{
+    position: sticky;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-family: "Faster One", system-ui;
+    font-size: 48px;
+}
+
+h1 #title1{
+    color: #F58634;
+}
+
+h1 #title2{
+    color: #FFCC29;
+}
+
+/* NAVIGATION BAR */
+
+.navigation-bar{
+
+    background-color: #007965; 
+    display: block;
+    position: fixed;
+    text-align: center;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+
+}
+
+.navigation-bar ul{
+    list-style: none;
+    width: 75px;
+    padding: 5px;
+    border-radius: 20px; 
+}
+
+.navigation-bar li{
+    text-align: center;
+    margin-top: 50px;
+}
+.navigation-bar li:hover{
+    background: #00473B;
+    border-radius: 20px;
+}
+
+#profileButton{
+    width: 44px;
+    height: 44px;
+}
+
+#homeButton{
+    width: 44px;
+    height: 44px;
+}
+
+#orderhistoryButton{
+    width: 44px;
+    height: 44px;
+}
+
+#cartButton{
+    width: 44px;
+    height: 44px;
+}
+
+/* BRIEF DESCRIPTION */
+
+.brief-description{
+    width: auto;
+}
+
+#briefImage{
+    object-fit: cover;
+    text-align: center;
+    max-width: 100%;
+    height: 600px;
+}
+
+.the-brief-description{
+    margin-left: 120px;
+    color: #007965;
+}
+
+#description1{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 633px;
+    height: 296px;
+}
+#sentence1{
+    font-weight: bold;
+    font-size: 40px;
+}
+#sentence2{
+    font-size: 24px;
+}
+
+#description2{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 385px;
+    height: 273px;
+    padding-left: 50px;
+}
+#address{    
+    width: 193px;
+    height: 130px;
+}
+#addressIcon{
+    text-align: center;
+    width: 35px;
+    height: 35px;
+}
+#addressTitle{
+    text-align: left;
+    font-size: 26px;
+}
+#listAddress{
+    list-style: none;
+    font-size: 16px;
+}
+
+#hours{
+    width: 385px;
+    height: 78px;
+}
+#hoursIcon{
+    text-align: center;
+    width: 35px;
+    height: 35px;
+}
+#hoursTitle{
+    text-align: left;
+    font-size: 26px;
+}
+#openingHours{
+    font-size: 16px;
+}
+
+/* PROMO */
+.promo{
+    position: relative;
+    margin-left: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#promoImage{
+    object-fit: cover;
+    border-radius: 30px;
+    width: 1118px;
+    height: 310px;   
+}
+.disc-announcement{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding-top: 45px;
+
+    background-color: #E3E3E3;
+    border-radius: 25px;
+    opacity: 0.5;
+    color: #007965;
+    font-size: 48px;
+    width: 1000px;
+    height: 200px;
+    text-align: center;
+}
+.promo a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #FFCC29;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* CATEGORY */
+.categories{
+    margin-left: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.categoryDisplay{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.categoryDisplay a{
+    background-color: #FFCC29;
+    border-radius: 15px;
+    width: 95%;
+    padding: 20px;
+    margin: 15px;
+
+    text-decoration: none;
+    text-align: center;
+    color: #007965;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.categoryDisplay a:hover{
+    background: #29BFFF;
+    color: #146689;
+}
+
+/* POPULAR MENU */
+.popular-menu{
+    margin-left: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#popularmenuTitle{
+    margin-left: 120px;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 10px;
+    color: #007965;
+}
+.popularmenuDisplay{
+    display: flex;
+    justify-content: space-around;
+}
+.popularmenuDisplay img{
+    object-fit: cover;
+    width: 260px;
+    height: 200px;
+    border-radius: 200px;
+}
+#popularmenuButton{
+    background-color: #F58634;
+    border: none;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+    width: 287px;
+
+    color: white;
+    text-align: center;
+    letter-spacing: 5px;
+}
+#popularmenuButton:hover{
+    background-color: #F55734;
+}
+
+/* FOOTER */
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    /* margin-left: 8px; */
+    background: #FFCC29;
+    color: #007965;
+    font-size: 15px;
+}
+
+.Column1{
+   display: flex;
+   justify-content: space-between;
+   padding: 35px;
+   
+}
+.Col1Row1 p{
+    opacity: 0.6;
+}
+.Col1Row1 a{
+    opacity: 0.6;
+    text-decoration: none;
+    color: #007965;
+}
+.Col1Row1{
+    float: left;
+    padding-left: 80px;
+}
+
+.contactUsIcon img{
+    display: inline-block;
+    justify-content: space-around;
+    width: 34px;
+    height: 34px;
+}
+
+.Column2{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(245, 134, 52, .7);
+    
+}
+.Col2Row1{
+    float: left;
+    padding-left: 90px;
+}
+.termsAndcondition{
+    float: left;
+    padding-right: 10px;
+    opacity: 0.6;  
+}
+.termsAndcondition a{
+    text-decoration: none;
+    color: #007965;
+}
+.privacyAndpolicy{
+    display: inline;
+    float: right;
+    padding-right: 40px;
+    opacity: 0.6;
+}
+.privacyAndpolicy a{
+    text-decoration: none;
+    color: #007965;
+}
+
+@media (max-width: 768px) {
+    /* Adjust header */
+    h1{
+        font-size: 38px;
+    }
+
+    /* Adjust navigation bar */
+    .navigation-bar ul{
+        width: 50px;
+    }
+    #profileButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #homeButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #orderhistoryButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #cartButton{
+        width: 33px;
+        height: 33px;
+    }
+    /* Adjust brief description */
+    #briefImage{
+        max-width: 100%;
+    }
+    .the-brief-description{
+        margin-left: 90px;
+    }
+    #description1{
+        width: 433px;
+        height: 196px;
+    }
+    #sentence1{
+        font-weight: bold;
+        font-size: 24px;
+    }
+    #sentence2{
+        font-size: 20px;
+    }
+    #description2{
+        display: inline;
+        width: 95px;
+        height: 100px;
+    }
+    #address{   
+        display: inline; 
+        width: 185px;
+        height: 120px;
+    }
+    #addressIcon{
+        width: 25px;
+        height: 25px;
+    }
+    #addressTitle{
+        text-align: left;
+        font-size: 16px;
+    }
+    #listAddress{
+        list-style: none;
+        font-size: 14px;
+    }
+    
+    #hours{
+        display: inline;
+        width: 185px;
+        height: 120px;
+    }
+    #hoursIcon{
+        width: 25px;
+        height: 25px;
+    }
+    #hoursTitle{
+        text-align: left;
+        font-size: 16px;
+    }
+    #openingHours{
+        font-size: 14px;
+    }
+
+    /* Adjust promo section */
+    .promo{
+        padding-top: 30px;
+        margin-left: 85px;
+    }
+    #promoImage{
+        width: 500px;
+        height: 210px;
+    }
+    .disc-announcement{
+        top: 40%;
+        left: 55%;
+        transform: translate(-60%, -45%);
+        width: 455px;
+        height: 120px;
+    }
+    .promo a{
+        text-align: center;
+        display: block;
+        padding-bottom: 30px;
+        font-size: 11px;
+    }
+
+    /* Adjust categories section */
+    .categoryDisplay a{
+        text-align: center;
+        width: 80%;
+    }
+
+    /* Adjust popular menu section */
+    .popular-menu{
+        margin-left: 90px;
+    }
+   .popularmenuDisplay img{
+        width: 100px;
+        height: 95px;
+    }
+    #popularmenuButton{
+        width: 200px;
+        height: 50px;
+        padding: 10px;
+        margin: 40px;
+    }
+    
+}

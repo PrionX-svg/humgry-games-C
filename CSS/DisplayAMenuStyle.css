@@ -1,0 +1,291 @@
+/* Font */
+.faster-one-regular {
+    font-family: "Faster One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sansation', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Sansation', sans-serif; */
+
+/* HEADER */
+
+header{
+    position: sticky;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-family: "Faster One", system-ui;
+    font-size: 48px;
+}
+
+h1 #title1{
+    color: #F58634;
+}
+
+h1 #title2{
+    color: #FFCC29;
+}
+
+/* NAVIGATION BAR */
+
+.navigation-bar{
+
+    background-color: #007965; 
+    display: block;
+    position: fixed;
+    text-align: center;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+
+}
+
+.navigation-bar ul{
+    list-style: none;
+    width: 75px;
+    padding: 5px;
+    border-radius: 20px; 
+}
+
+.navigation-bar li{
+    text-align: center;
+    margin-top: 50px;
+}
+.navigation-bar li:hover{
+    background: #00473B;
+    border-radius: 20px;
+}
+
+#profileButton{
+    width: 44px;
+    height: 44px;
+}
+
+#homeButton{
+    width: 44px;
+    height: 44px;
+}
+
+#orderhistoryButton{
+    width: 44px;
+    height: 44px;
+}
+
+#cartButton{
+    width: 44px;
+    height: 44px;
+}
+
+/* SECTION IN DISPLAY A MENU */
+.display-a-menu{
+    flex: 1;
+    text-align: center;
+    opacity: 0.5;
+}
+.display-a-menu img{
+    width: 420px;
+    height: 245px;
+    border-radius: 20px;
+    
+}
+.Detail-a-menu{
+   flex: 1;
+   text-align: center;
+   margin: 15px;
+}
+#Amount{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+
+}
+#NameOfTheMenu{
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+#PriceOfTheMenu{
+    font-size: 20px;
+}
+#TotalOfTheMenu{
+    margin-left: 410px;
+    text-align: left;
+    padding-top: 50px;
+}
+#ordernowButton{
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 80px;
+}
+#ordernowButton button{
+    width: 420px;
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #007965;
+    color: #FFCC29;
+    font-size: 20px;
+    font-family: 'Sansation', sans-serif;
+}
+#ordernowButton button:hover{
+    box-shadow: 0px 4px 4px 0 rgba(110, 110, 110, 0.41);
+}
+
+#minButton button{
+    position: absolute;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 300px;
+    width: 35px;
+    height: 35px;
+    background-color: #00473B;
+    color: #FFCC29;
+    border-style: none;
+    border-radius: 60px;
+    font-size: 24px;
+}
+#plusButton button{
+    position: absolute;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 920px;
+    width: 35px;
+    height: 35px;
+    background-color: #00473B;
+    color: #FFCC29;
+    border-style: none;
+    border-radius: 60px;
+    font-size: 24px;
+}
+
+/* FOOTER */
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    background: #FFCC29;
+    color: #007965;
+    font-size: 15px;
+}
+
+.Column1{
+   display: flex;
+   justify-content: space-between;
+   padding: 35px;
+   
+}
+.Col1Row1 p{
+    opacity: 0.6;
+}
+.Col1Row1 a{
+    opacity: 0.6;
+    text-decoration: none;
+    color: #007965;
+}
+.Col1Row1{
+    float: left;
+    padding-left: 80px;
+}
+
+.contactUsIcon img{
+    display: inline-block;
+    justify-content: space-around;
+    width: 34px;
+    height: 34px;
+}
+
+.Column2{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(245, 134, 52, .7);
+    
+}
+.Col2Row1{
+    float: left;
+    padding-left: 90px;
+}
+.termsAndcondition{
+    float: left;
+    padding-right: 10px;
+    opacity: 0.6;  
+}
+.termsAndcondition a{
+    text-decoration: none;
+    color: #007965;
+}
+.privacyAndpolicy{
+    display: inline;
+    float: right;
+    padding-right: 40px;
+    opacity: 0.6;
+}
+.privacyAndpolicy a{
+    text-decoration: none;
+    color: #007965;
+}
+
+@media (max-width: 768px) {
+    /* Adjust header */
+    h1{
+        font-size: 38px;
+    }
+
+    /* Adjust navigation bar */
+    .navigation-bar ul{
+        width: 50px;
+    }
+    #profileButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #homeButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #orderhistoryButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #cartButton{
+        width: 33px;
+        height: 33px;
+    }
+
+    /* Adjust the image */
+    .display-a-menu img{
+        width: 320px;
+        height: 200px;
+    }
+
+    /* Adjust the button */
+    #minButton{
+       margin-left: -200px;
+    }
+    #plusButton{
+        margin-left: -410px;
+    }
+    
+}

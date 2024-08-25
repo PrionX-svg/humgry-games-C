@@ -1,0 +1,246 @@
+/* Font */
+.faster-one-regular {
+    font-family: "Faster One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Sansation', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* LEFT PART OF THE REGISTER PAGE */
+.left-part{
+   flex: 1;
+}
+#signupImage{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+#logoTitle{
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    transform: translate(-90%, -50%);
+    font-size: 24px;
+    font-family: "Faster One", system-ui;
+}
+h2 #title1{
+    color: #F58634;
+}
+h2 #title2{
+    color: #FFCC29;
+}
+
+/* RIGHT PART OF THE REGISTER PAGE */
+.right-part{
+    flex: 1; 
+    background-color: #664B30;
+}
+#signupTitle{
+    text-align: center;
+    color: white;
+}
+form img{
+    position: absolute;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+}
+.form-display{
+    padding: 10px;
+    margin: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-position: center;
+    border-radius: 10px;
+    width: 600px;
+    height: 450px;
+}
+#signupForm{
+    padding: 30px;
+    width: 550px;
+    height: 350px;
+    
+}
+form input[id="name"], [id="email"], [id="address"], [id="male"], [id="female"], [id="dob"], [id="pw"], [id="agreement"]{
+    background-color: #443220;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+    padding-left: 50px;
+}
+#name{
+    width: 500px;
+    height: 25px;
+   
+}
+#email{
+    width: 500px;
+    height: 25px;
+}
+#address{
+    width: 500px;
+    height: 25px;
+}
+.gender input{
+    padding-right: 50px;
+    margin-right: 10px;
+    width: 50px;
+    font-style: normal;
+}
+.gender{
+    color: white;
+}
+#dob{
+    width: 500px;
+    height: 25px;
+}
+#pw{
+    width: 500px;
+    height: 25px;
+}
+.agreement input{
+    border-style: none;
+    background-color: #443220;
+}
+
+#signupButton{
+    text-align: center;
+}
+
+input[type=submit]{
+    width: 150px;
+    height: 55px;
+    margin: 4px 2px;
+    justify-content: center;
+    text-align: center;
+    border-style: none;
+    background-color: #F58634;
+    color: white;
+    border-radius: 45px;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+#signupButton input:hover{
+    background-color: #D17017;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+#signupButton input:active{
+    background-color: #F56234;
+    box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+    /*
+    box-shadow property: a b c d e
+    a = offset x
+    b = offset y
+    c = blur-radius
+    d = spread-radius
+    e = color
+    */
+}
+
+@media (max-width: 768px) {
+    /* Adjust header */
+    h1{
+        font-size: 38px;
+    }
+
+    /* Adjust navigation bar */
+    .navigation-bar ul{
+        width: 50px;
+    }
+    #profileButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #homeButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #orderhistoryButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #cartButton{
+        width: 33px;
+        height: 33px;
+    }
+
+    /* Adjust logo title */
+    #logoTitle{
+        font-size: 24px;
+    }
+
+    /* Adjust left-part */
+    #logoTitle{
+        top: 50px;
+        left: 20%;
+        font-size: 24px;
+    }
+
+    /* Adjust right-part */
+    #signupTitle{
+        font-size: 24px;
+    }
+    .form-display{
+        width: 300px;
+        height: 395px;
+    }
+    form input{
+        padding: 10px;
+        padding-left: 40px;
+    }
+    form img{
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        justify-content: center;
+    }
+    #name{
+        width: 235px;
+        height: 20px;
+    }
+    #email{
+        width: 235px;
+        height: 20px;
+    }
+    #address{
+        width: 235px;
+        height: 20px;
+    }
+    #dob{
+        padding-left: 40px;
+        width: 235px;
+        height: 20px;
+    }
+    #pw{
+        width: 235px;
+        height: 20px;
+    }
+    #signupForm{
+        padding: 10px;
+        width: 300px;
+        height: 350px;
+    }
+    #signupForm a{
+        font-size: 10px;
+    }
+    #signupButton input{
+        margin-top: -10px;
+        margin-bottom: 10px;
+        width: 120px;
+        height: 45px;
+    }
+
+}

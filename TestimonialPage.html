@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Testimonial</title>
+    <link rel="stylesheet" href="/CSS/TestimonialStyle.css">
+    <!-- Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/sansation" rel="stylesheet">
+    
+    
+</head>
+<body>
+<!-- HEADER -->
+    <header>
+        <h1> <span id="title1">cAteriNg</span> <span id="title2">Z </span></h1> 
+    </header>
+
+<!-- NAVBAR -->
+    <div class="navigation-bar">
+
+        <ul>
+            <li>
+                <a href="/RegisterPage/AccountPage.html"><img id="profileButton" src="./CAteriNgZ-Assets/icon/profile_icon.png" alt="Profile"></a>
+            </li>
+
+            <li>
+                <a href="HomePage.html"><img id="homeButton" src="./CAteriNgZ-Assets/icon/home_icon.png" alt="Home"></a>
+            </li>
+
+            <li>
+                <a href=""><img id="orderhistoryButton" src="./CAteriNgZ-Assets/icon/orderHistory_icon.png" alt="Order History"></a>
+            </li>
+
+            <li>
+                <a ><img id="cartButton" href="" src="./CAteriNgZ-Assets/icon/cart_icon.png" alt="Cart"></a>
+            </li>
+        </ul>   
+    </div>
+
+<!-- SECTION IN TESTIMONIAL PAGE -->
+    <h2>TESTIMONIAL</h2>
+    <div class="testimonial-section">
+        
+        <div class="testi-Column" id="testiColumn1">
+            <div class="testi-Container" id="t1" onclick="showPopUp('desc1', this)">
+                <div class="circle-Container" id="ProfilePic1"></div>
+                <p>Olivia</p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="testi-Container" id="t2" onclick="showPopUp('desc2', this)">
+                <div class="circle-Container" id="ProfilePic2"></div>
+                <p>Olivia</p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="testi-Container" id="t3" onclick="showPopUp('desc3', this)">
+                <div class="circle-Container" id="ProfilePic3"></div>
+                <p>Olivia</p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="testi-Container" id="t4" onclick="showPopUp('desc2', this)">
+                <div class="circle-Container" id="ProfilePic4"></div>
+                <p>Olivia</p>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+    
+        <div class="testi-Column" id="testiColumn2">
+            <div class="testi-Container" id="t5" onclick="showPopUp('desc1', this)">
+                <div class="circle-Container" id="ProfilePic5" ></div>
+                <p>Olivia</p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="testi-Container" id="t6" onclick="showPopUp('desc3', this)">
+                <div class="circle-Container" id="ProfilePic6"></div>
+                <p>Olivia</p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="testi-Container" id="t7" onclick="showPopUp('desc3', this)">
+                <div class="circle-Container" id="ProfilePic7"></div>
+                <p>Olivia</p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="testi-Container" id="t8" onclick="showPopUp('desc3', this)">
+                <div class="circle-Container" id="ProfilePic8"></div>
+                <p>Olivia</p>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+        <div class="testi-Column" id="testiColumn3">
+            <div class="testi-Container" id="t9" onclick="showPopUp('desc2', this)">
+                <div class="circle-Container" id="ProfilePic9"></div>
+                <p>Olivia</p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="testi-Container" id="t10" onclick="showPopUp('desc2', this)">
+                <div class="circle-Container" id="ProfilePic10"></div>
+                <p>Olivia</p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="testi-Container" id="t11" onclick="showPopUp('desc1', this)">
+                <div class="circle-Container" id="ProfilePic11"></div>
+                <p>Olivia</p>
+                <p>Software Engineer</p>
+            </div>
+            <div class="testi-Container" id="t12" onclick="showPopUp('desc3', this)">
+                <div class="circle-Container" id="ProfilePic12"></div>
+                <p>Olivia</p>
+                <p>Software Engineer</p>
+            </div>
+        </div>
+    </div>
+
+<!-- PopUp Container -->
+<div id="myPopUp" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="hidePopUp()">&times;</span>
+        <p id="popup-desc"></p>
+    </div>
+</div>
+
+<!-- Hidden Descriptions -->
+<div id="desc1" class="desc">
+    The taste is good, i want to order again
+</div>
+<div id="desc2" class="desc">
+    The taste is good, the delivery is so fast
+</div>
+<div id="desc3" class="desc">
+    Very delicious
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="Column1">
+        <div class="Col1Row1">
+            <b id="titleFooter">CATERINGZ</b><br>
+            <p id="contactUsFooter">Contact Us</p>
+            <a href="AboutUsPage.html" id="aboutUsFooter">About Us</a><br><br>
+            <a href="TestimonialPage.html" id="testimonialFooter">Testimonial</a><br><br>
+        </div>
+        <div class="Col1Row2">
+            <b>Contact Us</b><br><br>
+            <div class="contactUsIcon">
+                <img id="instagramIcon" src="./CAteriNgZ-Assets/icon/instagram_icon.png" alt="Instagram">
+                <img id="facebookIcon" src="./CAteriNgZ-Assets/icon/fb_icon.png" alt="Facebook">
+                <img id="twitterIcon" src="./CAteriNgZ-Assets/icon/twitter_icon.png" alt="Twitter">
+            </div>
+        </div>
+    </div>
+
+    <div class="Column2">
+        <div class="Col2Row1">
+            <b>© 2024 cateringz</b>                
+        </div>
+        <div class="Col2Row2">
+            <div class="termsAndcondition"><a href="">Terms&Condition</a></div>
+            <div class="privacyAndpolicy"><a href="">Privacy Policy</a> </div>      
+        </div>   
+    </div>              
+</footer>
+<!-- Import JavaScript -->
+    <script src="/JS/TestimonialPopUp.js"></script>
+</body>
+</html>

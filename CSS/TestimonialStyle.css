@@ -1,0 +1,298 @@
+/* Font */
+.faster-one-regular {
+    font-family: "Faster One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sansation', sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* font-family: 'Sansation', sans-serif; */
+
+/* HEADER */
+
+header{
+    position: sticky;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-family: "Faster One", system-ui;
+    font-size: 48px;
+}
+
+h1 #title1{
+    color: #F58634;
+}
+
+h1 #title2{
+    color: #FFCC29;
+}
+
+/* NAVIGATION BAR */
+
+.navigation-bar{
+
+    background-color: #007965; 
+    display: block;
+    position: fixed;
+    text-align: center;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+
+}
+
+.navigation-bar ul{
+    list-style: none;
+    width: 75px;
+    padding: 5px;
+    border-radius: 20px; 
+}
+
+.navigation-bar li{
+    text-align: center;
+    margin-top: 50px;
+}
+.navigation-bar li:hover{
+    background: #00473B;
+    border-radius: 20px;
+}
+
+#profileButton{
+    width: 44px;
+    height: 44px;
+}
+
+#homeButton{
+    width: 44px;
+    height: 44px;
+}
+
+#orderhistoryButton{
+    width: 44px;
+    height: 44px;
+}
+
+#cartButton{
+    width: 44px;
+    height: 44px;
+}
+
+/* TESTIMONIAL SECTION */
+.testimonial-section{
+    position: relative;
+    margin-left: 200px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.testi-Column{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    
+}
+.testi-Container{
+    flex: 1;
+    padding: 40px;
+    margin: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #00AF91;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    color: white;
+}
+.testi-Container:hover{
+    box-shadow: 0px 4px 4px 0 rgba(110, 110, 110, 0.41);
+}
+.circle-Container{
+    width: 100px;
+    height: 100px;
+    background-color: #007965;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/* PopUp Styles */
+.popup{
+    display: none; /* Hidden by default */
+    position: absolute;
+    z-index: 1;
+    background-color: #FFCC29;
+    color: #007965;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.desc {
+    display: none; /* Hidden descriptions */
+}
+
+/* FOOTER */
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    background: #FFCC29;
+    color: #007965;
+    font-size: 15px;
+}
+.Column1{
+   display: flex;
+   justify-content: space-between;
+   padding: 35px;
+   
+}
+.Col1Row1 p{
+    opacity: 0.6;
+}
+.Col1Row1 a{
+    opacity: 0.6;
+    text-decoration: none;
+    color: #007965;
+}
+.Col1Row1{
+    float: left;
+    padding-left: 80px;
+}
+
+.contactUsIcon img{
+    display: inline-block;
+    justify-content: space-around;
+    width: 34px;
+    height: 34px;
+}
+
+.Column2{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(245, 134, 52, .7);
+    
+}
+.Col2Row1{
+    float: left;
+    padding-left: 90px;
+}
+.termsAndcondition{
+    float: left;
+    padding-right: 10px;
+    opacity: 0.6;  
+}
+.termsAndcondition a{
+    text-decoration: none;
+    color: #007965;
+}
+.privacyAndpolicy{
+    display: inline;
+    float: right;
+    padding-right: 40px;
+    opacity: 0.6;
+}
+.privacyAndpolicy a{
+    text-decoration: none;
+    color: #007965;
+}
+
+@media (max-width: 768px) {
+    /* Adjust header */
+    h1{
+        font-size: 38px;
+    }
+
+    /* Adjust navigation bar */
+    .navigation-bar ul{
+        width: 50px;
+    }
+    #profileButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #homeButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #orderhistoryButton{
+        width: 33px;
+        height: 33px;
+    }
+    
+    #cartButton{
+        width: 33px;
+        height: 33px;
+    }
+
+    /* Adjust testimonial section */
+    .testimonial-section{
+        margin-left: 50px;
+        width: 90%;
+    }
+
+    /* Adjust testi column */
+    .testi-Column{
+        width: 200px;
+    }
+
+    /* Adjust testi container */
+    .testi-Container{
+        width: 100px;
+        height: 200px;
+    }
+    .testi-Container p{
+        margin: 15px 5px 0 -10px;
+        font-size: 12px;
+    }
+
+    /* Adjust circle container */
+    .circle-Container{
+        width: 60px;
+        height: 60px;
+        margin: 0 0 0 -20px;
+    }
+
+    /* Adjust Pop up style */
+    .popup{
+        width: 90px;
+    }
+}
+
+
