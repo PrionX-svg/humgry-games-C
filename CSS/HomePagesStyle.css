@@ -253,7 +253,7 @@ h1 #title2{
     object-fit: cover;
     width: 260px;
     height: 200px;
-    border-radius: 200px;
+    border-radius: 30px;
 }
 #popularmenuButton{
     background-color: #F58634;
